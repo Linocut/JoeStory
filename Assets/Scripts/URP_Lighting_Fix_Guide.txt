@@ -1,0 +1,34 @@
+// URP Lighting Troubleshooting Guide
+
+/* SOLUTION 1: Check Additional Lights Setting */
+1. Go to Project Settings > Graphics
+2. Find your URP Asset (Universal Render Pipeline Asset)
+3. Click on it in the inspector
+4. Under "Lighting" section:
+   - Ensure "Additional Lights" is set to "Per Pixel" (not "Disabled")
+   - Set "Per Object Limit" to at least 4-8
+   - Check "Additional Light Shadows" if you need shadows
+
+/* SOLUTION 2: Check Forward Renderer Data */
+1. In your URP Asset, find "Renderer List"
+2. Click on the Forward Renderer Data asset
+3. In the renderer settings:
+   - Ensure "Rendering Path" is set to "Forward" or "Forward+"
+   - Check that "Additional Lights" is enabled
+
+/* SOLUTION 3: Light Component Settings */
+1. Select your Point/Spot lights
+2. In Light component:
+   - Set "Render Mode" to "Auto" or "Important"
+   - Ensure "Light Layer" is set to "Default" or matches your objects
+   - Check that "Range" is sufficient
+   - Verify "Intensity" is high enough (try 1-10)
+
+/* SOLUTION 4: Material Settings */
+1. Check your materials are URP compatible:
+   - Use "Universal Render Pipeline/Lit" shader
+   - NOT "Standard" shader (that's Built-in RP only)
+   
+/* SOLUTION 5: Scene View vs Game View */
+1. Check if lights appear in Scene view but not Game view
+2. This indicates a camera or rendering settings issue

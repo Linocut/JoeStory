@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: IntroDialog
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: This is the story of Joe.
+    delayBeforeStart: 2
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: 35e5d050881cccd47ae2c4bbe94056ce, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: Joe is the <b>main character.</b>
+    delayBeforeStart: 1
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: cbaded808f6eac34586ab513f57ce4cc, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'He is on a journey to find freedom. But he doesn''t know it yet. '
+    delayBeforeStart: 1
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: 21cd6ac3658f53241b7b0e1acfc5a611, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'Currently, Joe''s environment is a very dull one, it''s only white void.
+      Like a scrap of paper... only digital. '
+    delayBeforeStart: 1
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: 6aa3befb478a7e946b3f5e309b4408cf, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'This is his <b>Ordinary World</b>. '
+    delayBeforeStart: 1
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: b048d314e2fc5504d9bc5b0c4ccfac36, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'If I had to describe Joe, I''d say he''s about 3 letters long and made
+      of black Ink.... only digital. '
+    delayBeforeStart: 1
+    displayDuration: 3
+    audioClip: {fileID: 8300000, guid: 6a83453978ae5e042bf59e96d2b8e804, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: But soon, that's about to<color=white> change. </color>
+    delayBeforeStart: 1
+    displayDuration: 5
+    audioClip: {fileID: 8300000, guid: 18a29d9cb49ab334082c74c5f31e8c71, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: Darken
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1
