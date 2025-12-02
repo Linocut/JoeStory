@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: Divergence1
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'Decisions should always occur in baby steps. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 8c0f3d758e0fa7740ab6f33a4f840554, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'Joe is only one day old, after all. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 07c9688a36b2008499cf209f713c0506, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: Can't have him getting <i>Overwhelmed</i> before he even knows what he
+      wants.
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: e3b70706a08743d4d953525921fd6101, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: '"I want to leave! There has to be an exit somewhere."'
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 81b6cb6910f6e7a489384f93db124bc9, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: Poor Joe, he can't just <b>Refuse the Call</b>
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: c80edbc7356b53641ac3a83c7ba08a08, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'Alas, he will have to continue as now there are two new doors to choose
+      from. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 559cb0a6755efb647b3d1305c95d5786, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'And these ones are better than the last. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 8c38e99a73a18944eb35a7a435f3297e, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0.5
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: Part1Door1
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'He had to ignore the other doors. He had to press on. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 2fd945d0e7c1f9f4fa9ca26f45e9d7f5, type: 3}
+    audioVolume: 0.6
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0.5
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1

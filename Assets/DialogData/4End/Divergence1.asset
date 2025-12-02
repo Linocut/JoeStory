@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: Divergence1
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'Thank you for playing the demo. Currently, you''ve experienced linearity,
+      false linearity, and some sort of divergence. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: c637ec92632f5ec4dac80b3900ccd5af, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'In the future, i hope to expand this for more content beyond the doors. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: d1e65ef7dcc21644f9c36ed40f23dee8, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'I hope to incorporate more choice, and more interactvity. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: f18c73690a3a11e419f0ac94082ea909, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'I also hope to have some puzzles that involve picking up and manipulating
+      objects similar to the mirror presented. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: b1e41e6541ebb38468c4cb1270812520, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: With that, thank you so much for playing Story of Joe!
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: a4784b54b6102044ba2d17a575188f75, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0.5
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1

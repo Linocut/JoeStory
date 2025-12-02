@@ -26,7 +26,6 @@ public class DialogTagListener : MonoBehaviour
         DialogEventBroadcaster.OnDialogStarted += HandleDialogStart;
         DialogEventBroadcaster.OnTypewriterCompleted += HandleTypewriterComplete;
         DialogEventBroadcaster.OnDialogEnded += HandleDialogEnd;
-        Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - Subscribed to dialog events. Listening for tags: {string.Join(", ", taggedEvents.ConvertAll(t => $"'{t.eventTag}'"))}");
     }
     
     void OnDisable()
@@ -38,18 +37,13 @@ public class DialogTagListener : MonoBehaviour
     
     private void HandleDialogStart(string dialogText, string eventTag)
     {
-        Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - Received Dialog Start. Event Tag: '{eventTag}'");
-        
         onAnyDialogStart?.Invoke(dialogText);
         
         // Check tagged events
         foreach (var taggedEvent in taggedEvents)
         {
-            Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - Checking tag '{taggedEvent.eventTag}' against received tag '{eventTag}'");
-            
             if (TagMatches(eventTag, taggedEvent.eventTag))
             {
-                Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - MATCH! Triggering onDialogStart for tag '{taggedEvent.eventTag}'");
                 taggedEvent.onDialogStart?.Invoke(dialogText);
             }
         }
@@ -57,8 +51,6 @@ public class DialogTagListener : MonoBehaviour
     
     private void HandleTypewriterComplete(string dialogText, string eventTag)
     {
-        Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - Received Typewriter Complete. Event Tag: '{eventTag}'");
-        
         onAnyTypewriterComplete?.Invoke(dialogText);
         
         // Check tagged events
@@ -66,7 +58,6 @@ public class DialogTagListener : MonoBehaviour
         {
             if (TagMatches(eventTag, taggedEvent.eventTag))
             {
-                Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - MATCH! Triggering onTypewriterComplete for tag '{taggedEvent.eventTag}'");
                 taggedEvent.onTypewriterComplete?.Invoke(dialogText);
             }
         }
@@ -74,8 +65,6 @@ public class DialogTagListener : MonoBehaviour
     
     private void HandleDialogEnd(string dialogText, string eventTag)
     {
-        Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - Received Dialog End. Event Tag: '{eventTag}'");
-        
         onAnyDialogEnd?.Invoke(dialogText);
         
         // Check tagged events
@@ -83,7 +72,6 @@ public class DialogTagListener : MonoBehaviour
         {
             if (TagMatches(eventTag, taggedEvent.eventTag))
             {
-                Debug.Log($"[TAG LISTENER DEBUG] {gameObject.name} - MATCH! Triggering onDialogEnd for tag '{taggedEvent.eventTag}'");
                 taggedEvent.onDialogEnd?.Invoke(dialogText);
             }
         }
@@ -94,8 +82,6 @@ public class DialogTagListener : MonoBehaviour
         if (string.IsNullOrEmpty(listenerTag)) return false;
         if (string.IsNullOrEmpty(receivedTag)) return false;
         
-        bool matches = receivedTag.Equals(listenerTag, System.StringComparison.OrdinalIgnoreCase);
-        Debug.Log($"[TAG LISTENER DEBUG] Tag comparison: '{receivedTag}' vs '{listenerTag}' = {matches}");
-        return matches;
+        return receivedTag.Equals(listenerTag, System.StringComparison.OrdinalIgnoreCase);
     }
 }

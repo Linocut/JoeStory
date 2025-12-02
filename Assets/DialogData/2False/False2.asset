@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: False2
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'He saw two doors, left or right. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 14cf9138d65135240b48fdb0a834c063, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: 'Doors proudly labeled: Convergent Decisions 1 and Convergent Decisions
+      2.'
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 4aee3e6fc3ec8fd43b0f517457714b53, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0.5
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1

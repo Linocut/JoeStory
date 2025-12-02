@@ -159,7 +159,6 @@ public class UIAppearance : MonoBehaviour
     {
         if (dialogData == null || dialogData.GetDialogCount() == 0)
         {
-            Debug.LogWarning("No dialog data assigned or dialog data is empty!");
             return;
         }
         
@@ -231,7 +230,6 @@ public class UIAppearance : MonoBehaviour
         
         // Trigger dialog start event via broadcaster
         DialogEventBroadcaster.TriggerDialogStart(entry.text, entry.eventTag);
-        Debug.Log($"[DIALOG TAG DEBUG] Dialog Started - Event Tag: '{entry.eventTag}' | Text Preview: '{entry.text.Substring(0, Mathf.Min(20, entry.text.Length))}...'");
         
         // Set up for this entry
         fullText = entry.text;
@@ -265,7 +263,6 @@ public class UIAppearance : MonoBehaviour
         
         // Trigger dialog end event via broadcaster
         DialogEventBroadcaster.TriggerDialogEnd(entry.text, entry.eventTag);
-        Debug.Log($"[DIALOG TAG DEBUG] Dialog Ended - Event Tag: '{entry.eventTag}'");
     }
     
     private IEnumerator TypewriterEffect(DialogEntry entry)
@@ -284,7 +281,6 @@ public class UIAppearance : MonoBehaviour
         
         // Trigger typewriter complete event via broadcaster
         DialogEventBroadcaster.TriggerTypewriterComplete(entry.text, entry.eventTag);
-        Debug.Log($"[DIALOG TAG DEBUG] Typewriter Complete - Event Tag: '{entry.eventTag}'");
         
         // Display complete text for specified duration
         yield return new WaitForSeconds(entry.displayDuration);
@@ -328,33 +324,5 @@ public class UIAppearance : MonoBehaviour
     public int GetCurrentDialogIndex()
     {
         return currentDialogIndex;
-    }
-    
-    // Debug method to check audio setup
-    public void TestAudioSetup()
-    {
-        if (audioSource == null)
-        {
-            Debug.LogError("AudioSource is null!");
-            return;
-        }
-        
-        Debug.Log($"AudioSource Status:");
-        Debug.Log($"- Enabled: {audioSource.enabled}");
-        Debug.Log($"- Volume: {audioSource.volume}");
-        Debug.Log($"- Mute: {audioSource.mute}");
-        Debug.Log($"- Current Clip: {(audioSource.clip != null ? audioSource.clip.name : "None")}");
-        Debug.Log($"- Is Playing: {audioSource.isPlaying}");
-        
-        // Check if dialog data has audio clips
-        if (dialogData != null)
-        {
-            Debug.Log($"Dialog Data has {dialogData.GetDialogCount()} entries:");
-            for (int i = 0; i < dialogData.GetDialogCount(); i++)
-            {
-                var entry = dialogData.GetDialogEntry(i);
-                Debug.Log($"- Entry {i}: {(entry.audioClip != null ? entry.audioClip.name : "No audio")}");
-            }
-        }
     }
 }

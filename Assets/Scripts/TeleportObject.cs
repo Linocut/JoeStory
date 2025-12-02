@@ -7,6 +7,7 @@ public class TeleportObject : MonoBehaviour
 
     public void Teleport()
     {
+        Debug.Log("Teleporting object to target location.");
         if (objectToTeleport != null && targetLocation != null)
         {
             objectToTeleport.transform.position = targetLocation.position;

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: False1
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'Once he stepped into his new environment, he saw two doors. '
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 6c43724737de1ae439e30689492e9fe8, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: <b> A Call to Adventure!</b> Out of his <b>Ordinary World</b> into the
+      wild world of choices!
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 3523d163a70d21e40bce8d91fd053c4f, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  - text: Is our hero ready?
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: 0c58f20b42afb51408f1130f79dc8c91, type: 3}
+    audioVolume: 1
+    waitForAudioToFinish: 1
+    eventTag: 
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0.5
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1

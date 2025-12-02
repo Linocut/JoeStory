@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa3ad838f6fcb741ac67bdc282d77e8, type: 3}
+  m_Name: Part1-2Dialog
+  m_EditorClassIdentifier: 
+  dialogEntries:
+  - text: 'As he continued, the world around him became more defined. '
+    delayBeforeStart: 0
+    displayDuration: 0.5
+    audioClip: {fileID: 8300000, guid: 800d8a2c3adc0db4db7aebfbc9c8dbf5, type: 3}
+    audioVolume: 0.6
+    waitForAudioToFinish: 1
+    eventTag: KillFog
+    eventData: 
+  - text: Doors appeared on either side of him, but he had to continue. He had to
+      continue on the <b>linear path</b>
+    delayBeforeStart: 0
+    displayDuration: 1
+    audioClip: {fileID: 8300000, guid: f4ed05c95c1f63b48b30aff159e59b4f, type: 3}
+    audioVolume: 0.6
+    waitForAudioToFinish: 1
+    eventTag: LinearPath
+    eventData: 
+  loopDialog: 0
+  delayBetweenEntries: 0
+  autoStartOnEnable: 1
+  hideUIWhenComplete: 1
